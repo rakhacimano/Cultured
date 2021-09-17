@@ -1,0 +1,100 @@
+/* === Tipography Guideline === */
+:root {
+  --sans-font: "Open Sans", sans-serif;
+  --cursive-font: "Arima Madurai", cursive;
+}
+
+/* === Color Style Guidline === */
+:root {
+  --primary-color: #084c61;
+  --secondary-color: #e6edef;
+  --tertiary-color: #ffc857;
+  --primary-color-100: #528290;
+}
+
+/* === Margin & Padding Guideline === */
+:root {
+  --margin-section-1: 10rem;
+  --margin-section-2: 8rem;
+  --margin-4: 0.25rem;
+  --margin-8: 0.5rem;
+  --margin-16: 1rem;
+  --margin-32: 2rem;
+  --margin-64: 4rem;
+  --margin-96: 6rem;
+
+  --padding-4: 0.25rem;
+  --padding-8: 0.5rem;
+  --padding-16: 1rem;
+  --padding-24: 1.5rem;
+}
+
+/* === Scrollbar Styling === */
+body::-webkit-scrollbar {
+  background-color: var(--primary-color);
+  width: 4px;
+  height: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--tertiary-color);
+}
+/* === End of Scrollbar Styling */
+
+/* === Navbar Styling | Website Edition === */
+
+nav {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+}
+
+nav .nav-links a {
+  text-decoration: none;
+  margin-right: 1.5rem;
+  color: var(--secondary-color);
+}
+
+nav .nav-cta a,
+.btn {
+  text-decoration: none;
+  background-color: var(--tertiary-color);
+  padding: 0.75rem var(--padding-24);
+  border-radius: 1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.nav-hamburger {
+  display: none;
+}
+
+/* === End of Navbar Styling | Website Edition === */
+
+/* === Navbar Styling | Tablet & Smartphone Edition */
+@media screen and (max-width: 1364px) {
+  nav {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+  }
+
+  nav .nav-links a {
+    display: none;
+  }
+
+  nav .nav-cta a,
+  .btn {
+    display: none;
+  }
+
+  .nav-hamburger {
+    display: unset;
+  }
+}

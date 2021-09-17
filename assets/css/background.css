@@ -1,0 +1,37 @@
+/* === Tipography Guideline === */
+:root {
+  --sans-font: "Open Sans", sans-serif;
+  --cursive-font: "Arima Madurai", cursive;
+}
+
+/* === Color Style Guidline === */
+:root {
+  --primary-color: #084c61;
+  --secondary-color: #e6edef;
+  --tertiary-color: #ffc857;
+  --primary-color-100: #528290;
+}
+
+/* === Margin & Padding Guideline === */
+:root {
+  --margin-section-1: 10rem;
+  --margin-section-2: 8rem;
+  --margin-4: 0.25rem;
+  --margin-8: 0.5rem;
+  --margin-16: 1rem;
+  --margin-32: 2rem;
+  --margin-64: 4rem;
+  --margin-96: 6rem;
+
+  --padding-4: 0.25rem;
+  --padding-8: 0.5rem;
+  --padding-16: 1rem;
+  --padding-24: 1.5rem;
+}
+
+body {
+  background-color: #084c61;
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e6edef' fill-opacity='0.06'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+  background-attachment: fixed;
+}

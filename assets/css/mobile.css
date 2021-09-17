@@ -1,0 +1,30 @@
+/* === Tipography Guideline === */
+:root {
+  --sans-font: "Open Sans", sans-serif;
+  --cursive-font: "Arima Madurai", cursive;
+}
+
+/* === Color Style Guidline === */
+:root {
+  --primary-color: #084c61;
+  --secondary-color: #e6edef;
+  --tertiary-color: #ffc857;
+  --primary-color-100: #528290;
+}
+
+/* === Margin & Padding Guideline === */
+:root {
+  --margin-section-1: 10rem;
+  --margin-section-2: 8rem;
+  --margin-4: 0.25rem;
+  --margin-8: 0.5rem;
+  --margin-16: 1rem;
+  --margin-32: 2rem;
+  --margin-64: 4rem;
+  --margin-96: 6rem;
+
+  --padding-4: 0.25rem;
+  --padding-8: 0.5rem;
+  --padding-16: 1rem;
+  --padding-24: 1.5rem;
+}
