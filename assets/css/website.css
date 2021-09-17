@@ -122,7 +122,7 @@ body {
   display: flex;
   align-items: center;
   padding: 1rem 2rem;
-  border-radius: .25rem 2.5rem .25rem 2.5rem;
+  border-radius: 0.25rem 2.5rem 0.25rem 2.5rem;
   color: var(--primary-color);
   font-weight: 600;
   width: fit-content;
@@ -133,7 +133,7 @@ body {
 }
 
 .left-box p.title-text {
-  font-size: .8125rem;
+  font-size: 0.8125rem;
   color: var(--primary-color-100);
   font-weight: 500;
   margin-bottom: var(--margin-4);
@@ -153,7 +153,19 @@ body {
   content: "";
   margin: 0 2rem;
   background-color: var(--primary-color-100);
-  width: .125rem;
+  width: 0.125rem;
   height: 2rem;
+}
+
+.beranda-right {
+  -webkit-animation: up-down 3s infinite;
+  animation: up-down 3s infinite;
+}
+
+.beranda-bottom {
+  text-align: center;
+  margin-top: var(--margin-16);
+  -webkit-animation: up-down 3s infinite;
+  animation: up-down 3s infinite;
 }
 /* === End of Spesifically Styling === */
