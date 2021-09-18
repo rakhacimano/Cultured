@@ -51,7 +51,8 @@ body {
   font-family: var(--sans-font);
   color: var(--secondary-color);
   font-size: 1.125rem;
-  font-weight: 500;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 @-webkit-keyframes up-down {
@@ -106,7 +107,7 @@ body {
   }
 
   .beranda-left .left-box {
-    padding: .75rem 1rem !important;
+    padding: 0.75rem 1rem !important;
   }
 
   .beranda-left .left-box .box-acara::after {
@@ -116,15 +117,15 @@ body {
 
   .beranda-left .left-box img {
     width: 1rem;
-    margin-right: .75rem;
+    margin-right: 0.75rem;
   }
-  
+
   .beranda-left .left-box p.content-text {
     text-align: left;
   }
 
   .beranda-left .left-box p.title-text {
-    font-size: .75rem ;
+    font-size: 0.75rem;
   }
 
   .beranda-right img {
@@ -133,6 +134,7 @@ body {
 }
 /* === End of Mobile Styling === */
 
+/* === Tablet Styling Goes Here */
 @media screen and (max-width: 1365px) {
   section {
     margin-bottom: var(--margin-section-2);
@@ -142,6 +144,7 @@ body {
     padding: 0 2.5rem;
   }
 
+  /* === Tablet | Section 1 Styling Goes Here === */
   .beranda-container {
     display: block;
     text-align: center;
@@ -183,7 +186,7 @@ body {
     text-align: left;
     font-size: 0.8125rem;
     color: var(--primary-color-100);
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: var(--margin-4);
   }
 
@@ -216,7 +219,43 @@ body {
     -webkit-animation: up-down 3s infinite;
     animation: up-down 3s infinite;
   }
+  /* === Tablet | Section 1 End Here === */
+
+  /* === Section 2 Styling Goes Here === */
+  section.section-2 .section-2__container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  section.section-2 .section-2__container .section-2__left {
+    display: flex;
+    justify-content: center;
+  }
+
+  .section-2__left .card {
+    background-color: var(--secondary-color);
+    width: 279px;
+    padding: 1rem 1rem 1.5rem;
+    color: var(--primary-color);
+    border-radius: 1.5rem;
+  }
+
+  .section-2__left .card.card-left {
+    margin-right: 2rem;
+  }
+
+  .card .text-container h4.title {
+    font-size: 1.5rem;
+    font-family: var(--cursive-font);
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .section-2__right {
+    text-align: center;
+  }
 }
+/* === Tablet Styling End Here === */
 
 /* === Laptop | Spesifically Styling Goes Here === */
 @media screen and (min-width: 1366px) {
@@ -228,6 +267,7 @@ body {
     padding: 0 6rem;
   }
 
+  /* === Styling for Section 1 / Beranda === */
   .beranda-container {
     display: flex;
     justify-content: space-between;
@@ -265,7 +305,7 @@ body {
   .left-box p.title-text {
     font-size: 0.8125rem;
     color: var(--primary-color-100);
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: var(--margin-4);
   }
 
@@ -297,6 +337,61 @@ body {
     margin-top: var(--margin-16);
     -webkit-animation: up-down 3s infinite;
     animation: up-down 3s infinite;
+  }
+  /* === End of Styling for Section 1 / Beranda === */
+
+  /* === Styling for Section 2 === */
+  section.section-2 .section-2__container {
+    display: flex;
+    align-items: center;
+  }
+
+  section.section-2 .section-2__container .section-2__left {
+    display: flex;
+    margin-right: 5rem;
+  }
+
+  .section-2__left .card {
+    background-color: var(--secondary-color);
+    width: 279px;
+    padding: 1rem 1rem 1.5rem;
+    color: var(--primary-color);
+    border-radius: 1.5rem;
+  }
+
+  .section-2__left .card.card-left {
+    margin-right: 2rem;
+  }
+
+  .card .text-container h4.title {
+    font-size: 1.5rem;
+    font-family: var(--cursive-font);
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+  }
+
+  h2.headline {
+    font-size: 2rem;
+    font-family: var(--cursive-font);
+  }
+
+  p.sub-headline {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  }
+
+  .right-bottom {
+    display: flex;
+  }
+
+  .right-bottom .number-title {
+    margin-right: 4rem;
+  }
+
+  h3.headline {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--tertiary-color);
   }
 }
 /* === End of Spesifically Styling === */
