@@ -242,7 +242,7 @@ body {
   }
 
   .beranda-container .beranda-left .left-text p.beranda__sub-headline {
-    margin-top: var(--margin-16);
+    margin-top: var(--margin-8);
     margin-bottom: var(--margin-96);
     line-height: 1.7;
   }
