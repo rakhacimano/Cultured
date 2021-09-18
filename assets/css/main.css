@@ -185,7 +185,7 @@ body {
   }
 
   .right-bottom .number-title {
-    margin-right: var(--margin-32) !important;
+    margin-right: var(--margin-16) !important;
   }
 
   .number-title.right {
