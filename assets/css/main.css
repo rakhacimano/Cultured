@@ -24,6 +24,7 @@
   --margin-8: 0.5rem;
   --margin-16: 1rem;
   --margin-32: 2rem;
+  --margin-48: 3rem;
   --margin-64: 4rem;
   --margin-96: 6rem;
 
@@ -51,10 +52,6 @@ body {
   color: var(--secondary-color);
   font-size: 1.125rem;
   font-weight: 500;
-}
-
-section {
-  margin-bottom: var(--margin-section-1);
 }
 
 @-webkit-keyframes up-down {
@@ -90,23 +87,148 @@ section {
   }
 }
 
-/* === End of Base Styling === */
+@media screen and (min-width: 250px) and (max-width: 767px) {
+  /* === Mobile Styling is Here === */
+  body {
+    font-size: 1rem;
+  }
 
-/* === Spesifically Styling Goes Here === */
-@media screen and (min-width: 1365px) {
+  section {
+    margin-bottom: var(--margin-section-2);
+  }
+
+  .layout-width {
+    padding: 0 1.5rem !important;
+  }
+
+  .beranda-left .left-text h1.beranda-headline {
+    font-size: 2rem !important;
+  }
+
+  .beranda-left .left-box {
+    padding: .75rem 1rem !important;
+  }
+
+  .beranda-left .left-box .box-acara::after {
+    margin: 0 1rem;
+    height: 1.5rem;
+  }
+
+  .beranda-left .left-box img {
+    width: 1rem;
+    margin-right: .75rem;
+  }
+  
+  .beranda-left .left-box p.content-text {
+    text-align: left;
+  }
+
+  .beranda-left .left-box p.title-text {
+    font-size: .75rem ;
+  }
+
+  .beranda-right img {
+    width: 80%;
+  }
+}
+/* === End of Mobile Styling === */
+
+@media screen and (max-width: 1365px) {
+  section {
+    margin-bottom: var(--margin-section-2);
+  }
+
+  .layout-width {
+    padding: 0 2.5rem;
+  }
+
+  .beranda-container {
+    display: block;
+    text-align: center;
+    margin-top: var(--margin-64);
+  }
+
+  .beranda-container .beranda-left .left-text h1.beranda-headline {
+    font-family: var(--cursive-font);
+    font-size: 4rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .beranda-container .beranda-left .left-text p.beranda__sub-headline {
+    margin-top: var(--margin-8);
+    margin-bottom: var(--margin-64);
+    line-height: 1.7;
+    text-align: center;
+  }
+
+  .beranda-left .left-box {
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: var(--margin-64);
+    padding: 1rem 2rem;
+    border-radius: 0.25rem 2.5rem 0.25rem 2.5rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    width: fit-content;
+  }
+
+  .left-box img {
+    margin-right: var(--margin-16);
+  }
+
+  .left-box p.title-text {
+    text-align: left;
+    font-size: 0.8125rem;
+    color: var(--primary-color-100);
+    font-weight: 500;
+    margin-bottom: var(--margin-4);
+  }
+
+  .left-box .box-acara {
+    display: flex;
+    align-items: center;
+  }
+
+  .left-box .box-jadwal {
+    display: flex;
+    align-items: center;
+  }
+
+  .box-acara::after {
+    content: "";
+    margin: 0 2rem;
+    background-color: var(--primary-color-100);
+    width: 0.125rem;
+    height: 2rem;
+  }
+
+  .beranda-right {
+    -webkit-animation: up-down 3s infinite;
+    animation: up-down 3s infinite;
+  }
+
+  .beranda-bottom {
+    text-align: center;
+    margin-top: var(--margin-16);
+    -webkit-animation: up-down 3s infinite;
+    animation: up-down 3s infinite;
+  }
+}
+
+/* === Laptop | Spesifically Styling Goes Here === */
+@media screen and (min-width: 1366px) {
+  section {
+    margin-bottom: var(--margin-section-1);
+  }
+
   .layout-width {
     padding: 0 6rem;
   }
 
-  body {
-    font-family: var(--sans-font);
-    color: var(--secondary-color);
-    font-size: 1.125rem;
-    font-weight: 500;
-  }
-
   .beranda-container {
-    background-color: red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -178,5 +300,3 @@ section {
   }
 }
 /* === End of Spesifically Styling === */
-
-
