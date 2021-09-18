@@ -131,6 +131,69 @@ body {
   .beranda-right img {
     width: 80%;
   }
+
+  /* === Styling for Section 2 === */
+  section.section-2 .section-2__container {
+    display: flex;
+    align-items: center;
+  }
+
+  section.section-2 .section-2__container .section-2__left {
+    display: flex;
+    justify-content: center !important;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  .section-2__left .card {
+    background-color: var(--secondary-color);
+    width: 279px;
+    padding: 1rem 1rem 1.5rem;
+    color: var(--primary-color);
+    border-radius: 1.5rem;
+    margin-bottom: var(--margin-32);
+  }
+
+  .section-2__left .card.card-left {
+    margin-right: 0 !important;
+  }
+
+  .card .text-container h4.title {
+    font-size: 1.5rem;
+    font-family: var(--cursive-font);
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+  }
+
+  h2.headline {
+    font-size: 1.5rem !important;
+    font-family: var(--cursive-font);
+  }
+
+  p.sub-headline {
+    margin-top: 1rem;
+    margin-bottom: var(--margin-64);
+  }
+
+  .right-bottom {
+    display: flex;
+  }
+
+  .right-bottom .number-title {
+    margin-right: var(--margin-32) !important;
+  }
+
+  .number-title.right {
+    margin-right: 0 !important;
+  }
+
+  h3.headline {
+    font-size: 1.5rem !important;
+    font-weight: 600;
+    color: var(--tertiary-color);
+  }
+  /* === End of Section 2 Styling === */
+
 }
 /* === End of Mobile Styling === */
 
@@ -225,11 +288,17 @@ body {
   section.section-2 .section-2__container {
     display: flex;
     flex-direction: column-reverse;
+    justify-content: center;
   }
 
   section.section-2 .section-2__container .section-2__left {
     display: flex;
     justify-content: center;
+  }
+
+  section.section-2 .section-2__container .section-2__left {
+    display: flex;
+    margin-top: 5rem;
   }
 
   .section-2__left .card {
@@ -253,6 +322,36 @@ body {
 
   .section-2__right {
     text-align: center;
+  }
+
+  h2.headline {
+    font-size: 3rem;
+    font-family: var(--cursive-font);
+  }
+
+  p.sub-headline {
+    margin-top: 1rem;
+    margin-bottom: var(--margin-64);
+  }
+
+  .right-bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--margin-64);
+  }
+
+  h3.headline {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--tertiary-color);
+  }
+
+  .right-bottom .number-title {
+    margin-right: var(--margin-64);
+  }
+
+  .number-title.right {
+    margin-right: 0;
   }
 }
 /* === Tablet Styling End Here === */
@@ -371,13 +470,13 @@ body {
   }
 
   h2.headline {
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: var(--cursive-font);
   }
 
   p.sub-headline {
     margin-top: 1rem;
-    margin-bottom: 4rem;
+    margin-bottom: var(--margin-64);
   }
 
   .right-bottom {
@@ -385,7 +484,7 @@ body {
   }
 
   .right-bottom .number-title {
-    margin-right: 4rem;
+    margin-right: var(--margin-64);
   }
 
   h3.headline {
@@ -393,5 +492,6 @@ body {
     font-weight: 600;
     color: var(--tertiary-color);
   }
+  /* === End of Section 2 === */
 }
 /* === End of Spesifically Styling === */
