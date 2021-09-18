@@ -173,6 +173,11 @@ body {
   p.sub-headline {
     margin-top: 1rem;
     margin-bottom: var(--margin-64);
+    max-width: 100%;
+  }
+
+  p.sub-headline br {
+    display: none;
   }
 
   .right-bottom {
