@@ -18,8 +18,6 @@
 
 /* === Margin & Padding Guideline === */
 :root {
-  --margin-section-1: 10rem;
-  --margin-section-2: 8rem;
   --margin-4: 0.25rem;
   --margin-8: 0.5rem;
   --margin-16: 1rem;
@@ -95,7 +93,7 @@ body {
   }
 
   section {
-    margin-bottom: var(--margin-section-2);
+    margin-bottom: 8rem;
   }
 
   .layout-width {
@@ -199,13 +197,18 @@ body {
   }
   /* === End of Section 2 Styling === */
 
+  /* === Section 3 / Suku Styling === */
+  .suku-text {
+    text-align: center;
+  }
+  /* === End of Section 3 Styling === */
 }
 /* === End of Mobile Styling === */
 
 /* === Tablet Styling Goes Here */
 @media screen and (max-width: 1365px) {
   section {
-    margin-bottom: var(--margin-section-2);
+    margin-bottom: 12.5rem;
   }
 
   .layout-width {
@@ -358,13 +361,20 @@ body {
   .number-title.right {
     margin-right: 0;
   }
+  /* === End Styling for Section 2 === */
+
+  /* === Styling Section 3 / Suku Goes Here === */
+  section.suku .suku-text {
+    text-align: center;
+  }
+  /* === End Styling for Section 3 */
 }
 /* === Tablet Styling End Here === */
 
 /* === Laptop | Spesifically Styling Goes Here === */
 @media screen and (min-width: 1366px) {
   section {
-    margin-bottom: var(--margin-section-1);
+    margin-bottom: 12.5rem;
   }
 
   .layout-width {
@@ -498,5 +508,11 @@ body {
     color: var(--tertiary-color);
   }
   /* === End of Section 2 === */
+
+  /* === Styling Section 3 / Suku Goes Here === */
+  section.suku .suku-text {
+    text-align: center;
+  }
+  /* === End Styling for Section 3 */
 }
 /* === End of Spesifically Styling === */
