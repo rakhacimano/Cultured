@@ -63,6 +63,10 @@ nav .nav-links a {
   color: var(--secondary-color);
 }
 
+nav .nav-links .link-end {
+  margin-right: 0;
+}
+
 nav .nav-cta a,
 .btn {
   text-decoration: none;

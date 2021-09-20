@@ -143,13 +143,17 @@ body {
     flex-direction: column;
   }
 
-  .section-2__left .card {
+  .card {
     background-color: var(--secondary-color);
     width: 279px;
     padding: 1rem 1rem 1.5rem;
     color: var(--primary-color);
-    border-radius: 1.5rem;
+    border-radius: 2rem;
     margin-bottom: var(--margin-32);
+  }
+
+  .card img {
+    border-radius: 1rem;
   }
 
   .section-2__left .card.card-left {
@@ -309,12 +313,16 @@ body {
     margin-top: 5rem;
   }
 
-  .section-2__left .card {
+  .card {
     background-color: var(--secondary-color);
     width: 279px;
     padding: 1rem 1rem 1.5rem;
     color: var(--primary-color);
-    border-radius: 1.5rem;
+    border-radius: 2rem;
+  }
+
+  .card img {
+    border-radius: 1rem;
   }
 
   .section-2__left .card.card-left {
@@ -465,12 +473,16 @@ body {
     margin-right: 5rem;
   }
 
-  .section-2__left .card {
+  .card {
     background-color: var(--secondary-color);
     width: 279px;
     padding: 1rem 1rem 1.5rem;
     color: var(--primary-color);
-    border-radius: 1.5rem;
+    border-radius: 2rem;
+  }
+
+  .card img {
+    border-radius: 1rem;
   }
 
   .section-2__left .card.card-left {
@@ -512,6 +524,25 @@ body {
   /* === Styling Section 3 / Suku Goes Here === */
   section.suku .suku-text {
     text-align: center;
+  }
+
+  section.suku .suku-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+  }
+
+  .suku-card .card {
+    width: 370px;
+    padding: 1.5rem;
+  }
+
+  .suku-container .card .text-container h4.title {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.25rem;
   }
   /* === End Styling for Section 3 */
 }
