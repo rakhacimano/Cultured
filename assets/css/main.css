@@ -205,6 +205,13 @@ body {
   .suku-text {
     text-align: center;
   }
+
+  section.suku .suku-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    justify-content: center;
+  }
   /* === End of Section 3 Styling === */
 }
 /* === End of Mobile Styling === */
@@ -375,6 +382,35 @@ body {
   section.suku .suku-text {
     text-align: center;
   }
+
+  section.suku .suku-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .suku-card .card {
+    width: 279px;
+    padding: 1.5rem;
+  }
+
+  .card img {
+    width: 231px;
+  }
+
+  .suku-container .card .text-container h4.title {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .button-container .btn {
+    text-align: center;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    display: block;
+  }
   /* === End Styling for Section 3 */
 }
 /* === Tablet Styling End Here === */
@@ -544,6 +580,14 @@ body {
     margin-top: 1.5rem;
     margin-bottom: 0.25rem;
   }
+
+  .button-container .btn {
+    text-align: center;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    display: block;
+  }
+
   /* === End Styling for Section 3 */
 }
 /* === End of Spesifically Styling === */
