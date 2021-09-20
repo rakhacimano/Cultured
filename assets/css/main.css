@@ -212,6 +212,10 @@ body {
     gap: .5rem;
     justify-content: center;
   }
+
+  .card {
+    margin-bottom: 0;
+  }
   /* === End of Section 3 Styling === */
 }
 /* === End of Mobile Styling === */
