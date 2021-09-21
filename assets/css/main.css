@@ -420,10 +420,58 @@ body {
   /* === End Styling for Section 3 */
 
   /* === Section 4 / Event Styling Start Here === */
+  section.event {
+    display: flex;
+    justify-content: center;
+  }
+
   h2.headline,
   p.sub-headline {
     text-align: center;
   }
+
+  .event .event-container .event-content .content-1,
+  .event .event-container .event-content .content-2,
+  .event .event-container .event-content .content-3 {
+    padding: 1.5rem;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .event .event-container .event-content .content-1 .image-container img,
+  .event .event-container .event-content .content-2 .image-container img,
+  .event .event-container .event-content .content-3 .image-container img {
+    border-radius: 1rem;
+  }
+
+  .content-1 .image-container,
+  .content-2 .image-container, 
+  .content-3 .image-container {
+    height: 298px;
+  }
+
+  .event-description h4.title {
+    font-size: 2rem;
+    font-family: var(--cursive-font);
+    margin-bottom: 0.25rem;
+    margin-top: 1.5rem;
+  }
+
+  .event-detail {
+    margin-top: 2rem;
+  }
+
+  .detail-location,
+  .detail-quota,
+  .detail-time {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
   /* === End Section 4 / Event Styling === */
 }
 /* === Tablet Styling End Here === */
