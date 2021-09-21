@@ -28,3 +28,54 @@
   --padding-16: 1rem;
   --padding-24: 1.5rem;
 }
+
+@media screen and (min-width: 1366px) {
+  footer {
+    background-color: var(--secondary-color);
+    width: 100%;
+    color: var(--primary-color);
+    padding-top: 4rem !important;
+    padding-bottom: 2rem !important;
+    border-radius: 2rem 2rem 0;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: var(--primary-color);
+    margin-bottom: .5rem;
+  }
+
+.footer-description {
+  margin-right: 4rem;
+}
+
+  footer h4.title,
+  .footer-description img {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  footer .footer-container {
+    display: flex;
+    column-gap: 6rem;
+    margin-bottom: 4rem;
+  }
+
+  .footer-links,
+  .footer-suku  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-bagikan img {
+    margin-top: 2rem;
+    margin-right: 1rem;
+  }
+
+  p.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
