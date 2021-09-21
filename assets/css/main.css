@@ -246,7 +246,7 @@ body {
   }
 
   .event-description h4.title {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
     font-family: var(--cursive-font);
     margin-bottom: 0.25rem;
     margin-top: 1.5rem;
