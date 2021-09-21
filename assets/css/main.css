@@ -270,6 +270,10 @@ body {
   p.sub-headline {
     text-align: center;
   }
+
+  .bagikan-content img {
+    width: 4rem;
+  }
   /* === End of Section 5 / Bagikan Styling === */
 }
 /* === End of Mobile Styling === */
