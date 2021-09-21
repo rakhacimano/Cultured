@@ -1,7 +1,7 @@
 /* === Tipography Guideline === */
 :root {
   --sans-font: "DM Sans", sans-serif;
-  --cursive-font: 'Arima Madurai', cursive;
+  --cursive-font: "Arima Madurai", cursive;
 }
 
 /* === Color Style Guidline === */
@@ -29,6 +29,81 @@
   --padding-24: 1.5rem;
 }
 
+@media screen and (min-width: 250px) and (max-width: 767px) {
+  .footer-description {
+    margin-top: 2rem;
+  }
+
+  p.bottom {
+    padding-bottom: 2rem;
+  }
+
+  footer .footer-container {
+    column-gap: 2rem;
+  }
+
+  .footer-description,
+  .footer-links,
+  .footer-suku {
+    margin-bottom: 2rem !important;
+    margin-right: 0 !important;
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  footer {
+    background-color: var(--secondary-color);
+    width: 100%;
+    color: var(--primary-color);
+    padding-top: 4rem !important;
+    padding-bottom: 2rem !important;
+    border-radius: 2rem 2rem 0 0;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-description {
+    margin-bottom: 4rem;
+    margin-right: 24rem;
+  }
+
+  footer h4.title,
+  .footer-description img {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  footer .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .footer-links,
+  .footer-suku {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+  }
+
+  .footer-bagikan img {
+    margin-top: 2rem;
+    margin-right: 1rem;
+  }
+
+  p.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @media screen and (min-width: 1366px) {
   footer {
     background-color: var(--secondary-color);
@@ -36,18 +111,18 @@
     color: var(--primary-color);
     padding-top: 4rem !important;
     padding-bottom: 2rem !important;
-    border-radius: 2rem 2rem 0;
+    border-radius: 2rem 2rem 0 0;
   }
 
   footer a {
     text-decoration: none;
     color: var(--primary-color);
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
 
-.footer-description {
-  margin-right: 4rem;
-}
+  .footer-description {
+    margin-right: 4rem;
+  }
 
   footer h4.title,
   .footer-description img {
@@ -63,7 +138,7 @@
   }
 
   .footer-links,
-  .footer-suku  {
+  .footer-suku {
     display: flex;
     flex-direction: column;
   }
