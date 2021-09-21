@@ -242,7 +242,7 @@ body {
   .content-3 .image-container {
     height: 165px !important;
     width: 295px;
-    margin-right: 0 !important;
+    margin: 0 auto;
   }
 
   .event-description h4.title {
