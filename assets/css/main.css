@@ -1,10 +1,10 @@
 /* === Imported Fonts from Google Font === */
 
-@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@800&family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@800&family=DM+Sans:wght@400;700&display=swap");
 
 /* === Tipography Guideline === */
 :root {
-  --sans-font: "Open Sans", sans-serif;
+  --sans-font: "DM Sans", sans-serif;
   --cursive-font: "Arima Madurai", cursive;
 }
 
@@ -196,7 +196,7 @@ body {
 
   h3.headline {
     font-size: 1.5rem !important;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--tertiary-color);
   }
   /* === End of Section 2 Styling === */
@@ -211,6 +211,13 @@ body {
     margin-top: 1rem !important;
   }
   /* === End of Section 3 Styling === */
+
+  /* === Section 4 / Event Styling Goes Here === */
+  h2.headline,
+  p.sub-headline {
+    text-align: center;
+  }
+  /* === End of Section 4 Styling === */
 }
 /* === End of Mobile Styling === */
 
@@ -254,7 +261,7 @@ body {
     padding: 1rem 2rem;
     border-radius: 0.25rem 2.5rem 0.25rem 2.5rem;
     color: var(--primary-color);
-    font-weight: 600;
+    font-weight: 700;
     width: fit-content;
   }
 
@@ -363,7 +370,7 @@ body {
 
   h3.headline {
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--tertiary-color);
   }
 
@@ -411,6 +418,13 @@ body {
     display: block;
   }
   /* === End Styling for Section 3 */
+
+  /* === Section 4 / Event Styling Start Here === */
+  h2.headline,
+  p.sub-headline {
+    text-align: center;
+  }
+  /* === End Section 4 / Event Styling === */
 }
 /* === Tablet Styling End Here === */
 
@@ -451,7 +465,7 @@ body {
     padding: 1rem 2rem;
     border-radius: 0.25rem 2.5rem 0.25rem 2.5rem;
     color: var(--primary-color);
-    font-weight: 600;
+    font-weight: 700;
     width: fit-content;
   }
 
@@ -551,7 +565,7 @@ body {
 
   h3.headline {
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--tertiary-color);
   }
   /* === End of Section 2 === */
@@ -586,6 +600,99 @@ body {
     border-radius: 1rem;
     display: block;
   }
-  /* === End Styling for Section 3 */
+  /* === End Styling for Section 3 === */
+
+  /* === Styling for Section 4 / Event === */
+  section.event h2.headline,
+  section.event p.sub-headline {
+    text-align: center;
+  }
+
+  section.event .event-container .event-content .content-1,
+  .content-2,
+  .content-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+
+  /* === Content 2 only === */
+  .content-2 {
+    flex-direction: row-reverse;
+  }
+
+  .content-2 h4.title,
+  .content-2 p.description {
+    text-align: right;
+  }
+
+  .content-2 .detail-location,
+  .content-2 .detail-quota,
+  .content-2 .detail-time,
+  .content-2 .event-button {
+    flex-direction: row-reverse;
+  }
+
+  .content-2 .detail-location img,
+  .content-2 .detail-quota img,
+  .content-2 .detail-time img,
+  .content-2 .event-button {
+    margin-right: 0;
+  }
+
+  .content-2 .image-container {
+    margin-right: 0 !important;
+    margin-left: 2rem;
+  }
+
+  .content-2 .description-container img {
+    margin-left: 1rem;
+  }
+
+  /* === End Content 2 Only === */
+
+  .event-content .image-container {
+    background-color: var(--secondary-color);
+    border-radius: 2rem;
+    width: 577px;
+    height: 346px;
+    padding: 1.5rem;
+    margin-right: 4rem;
+  }
+
+  .image-container img {
+    border-radius: 1rem;
+  }
+
+  .event-description h4.title {
+    font-size: 2rem;
+    font-family: var(--cursive-font);
+    margin-bottom: 0.25rem;
+  }
+
+  .event-detail {
+    margin-top: 2rem;
+  }
+
+  .detail-location,
+  .detail-quota,
+  .detail-time {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .event-detail img {
+    margin-right: 0.5rem;
+  }
+
+  .event-button {
+    display: flex;
+    margin-top: 1rem;
+  }
+
+  /* === End Styling for Section 4 === */
 }
 /* === End of Spesifically Styling === */

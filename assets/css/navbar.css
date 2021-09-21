@@ -1,7 +1,7 @@
 /* === Tipography Guideline === */
 :root {
-  --sans-font: "Open Sans", sans-serif;
-  --cursive-font: "Arima Madurai", cursive;
+  --sans-font: "DM Sans", sans-serif;
+  --cursive-font: 'Arima Madurai', cursive;
 }
 
 /* === Color Style Guidline === */
@@ -73,7 +73,7 @@ nav .nav-cta a,
   background-color: var(--tertiary-color);
   padding: 0.75rem var(--padding-24);
   border-radius: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--primary-color);
 }
 
